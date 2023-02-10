@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Página de Prueba :D </title>
+
+</head>
+
+<body>
+
+	<h1> Alertas y confirmaciones X̷̬͙̮̖̌́̆̒̌͝D̵̻̠͙͐̒̌́̔̕</h1>
+	<button> Botón sin sentido </button>
+	<br></br>
+
+	<a target="_blank" href="mark.jpg_large"><button onclick="accion_1()" id="Bt1"> Botón #1 </button></a>
+	<br></br>
+
+	<a target="_blank" href="https://youtu.be/Y79APGsA1_4"><button onclick="accion_2()" id="Bt2"> Botón #2 </button></a>
+	<br></br>
+
+	<button onclick="accion_3()" id="Bt3"> Botón #3 </button>
+	<br><br></br>
+
+	<h2> Despliegue de datos. </h2><!-- Interfaz de entrada y salida -->
+	<p> Necesitamos sus datos personales :D </p>
+	<br>
+
+	Primer Nombre: <input type="text" name="Recibir Nombre" id="txt_1">
+	<br><br>
+	Segundo Nombre: <input type="text" name="Recibir Segundo Nombre" id="txt_2">
+	<br>
+
+	<p>Primer Apellido: <input type="text" name="Recibir Apellido" id="txt_3"></p>
+	<p>Segundo Apellido: <input type="text" name="Recibir Segundo Apellido" id="txt_4"></p>
+	<!-- los parrafos generan 'BR' -->
+	<br><br>
+
+	<button onclick="accion_4()" id="Bt4"> Concatenar el Nombre XD </button>
+	<br><br>
+
+	Nombres: &nbsp; <output id="out1"></output> Apellidos: &nbsp; <output id="out2"></output>
+	<br><br><br><br><br><br><br><br>
+
+	<!-- Css y javaScrip :v -->
+	<style type="text/css">
+		/* Comentario css, aquí se puede cambiar el look de la página*/
+		body{
+			background-image: url(FondoWEB2.jpg);
+			background-repeat: round;
+			color: rgba(222, 222, 222, 1.0);
+		}
+		h1{
+			color: rgba(243, 243, 243, 1.0);
+		}
+		h2{
+			color: rgba(215, 240, 242, 1.0);
+		}
+		#out1{color: rgba(255, 0, 0, 1.0);}
+		#out2{color: rgba(255, 0, 0, 1.0);}
+		#Bt4{color: rgba(0, 0, 150, 1.0);}
+
+	</style>
+
+	<script type="text/javascript">
+		//esto es comentario javaScript, aquí le doy funciones a la página.
+		function accion_1() {
+			// body
+			alert("Welcome everybody, my name is Markiplier");
+		}
+		function accion_2(){
+			confirm("confirmación del botón 2 C:");
+		}
+		function accion_3() {
+			// body
+			alert("alerta del botón 3");
+			confirm("confirmación del botón 3");
+		}
+		function accion_4() {
+			// body
+			var NombreCompleto = document.getElementById("txt_1").value+" "+
+						  		 document.getElementById("txt_2").value+" "+
+						  		 document.getElementById("txt_3").value+" "+
+								 document.getElementById("txt_4").value;
+
+			var Nombres = document.getElementById("txt_1").value+" "+
+						  document.getElementById("txt_2").value+"";
+
+			var Apellidos = document.getElementById("txt_3").value+" "+
+							document.getElementById("txt_4").value;
+
+			alert("Tu nombre es "+NombreCompleto+" ... que nombre de virgo XDXD");
+
+			document.getElementById("out1").innerHTML=Nombres;
+
+			document.getElementById("out2").innerHTML=Apellidos;
+
+		}
+	</script>
+
+</body>
+
+</html>
